@@ -80,22 +80,38 @@ export const P = {
     hudHeightPx: 44, // HUD strip above the field, px, 32–80
     scrollPerBeat: 0.12, // background scroll speed, cu per beat, 0–0.5
     stripeGap: 0.25, // background stripe spacing, cu, 0.1–0.5
+    stripePx: 3, // background stripe thickness, px, 1–8
+    fieldCornerPx: 14, // playfield corner rounding, px, 0–32
     lineWidthPx: 2, // path and ring stroke width, px, 1–4
     previewAlpha: 0.55, // next-beat path opacity, 0–1
     previewDotFrac: 0.6, // end-of-path dot size relative to the bullet, 0.3–1
-    dangerSizePx: 9, // danger mark half-size, px, 5–16
+    markAlpha: 0.9, // plan line, target, danger and graze mark opacity, 0–1
+    targetRingPx: 7, // planned target ring radius, px, 4–14
+    dangerSizePx: 9, // danger mark (X at the bullet) half-size, px, 5–16
+    dangerWidthPx: 3, // danger mark stroke width, px, 1–5
+    dangerDotPx: 4, // danger dot on the planned path, radius px, 2–8
+    grazeMarkPx: 8, // graze mark ring radius, px, 4–14
+    shotHintAlpha: 0.3, // planned shot direction line opacity, 0–1
     reachAlpha: 0.25, // reach circle opacity, 0–1
     shipSize: 0.05, // ship drawing half-size, cu, 0.03–0.08 (visual only; hitbox is player.hitR)
+    shipHighlightFrac: 0.6, // ship specular arc size relative to shipSize, 0.3–1
+    hitboxMinPx: 1.5, // ship hitbox dot never draws smaller than this, px, 1–4
     gunLen: 0.07, // gun barrel drawing length, local creature units, 0.04–0.12
     gunWidth: 0.035, // gun barrel drawing width, local creature units, 0.02–0.06
     weakPulseBeats: 2, // weak point colour pulse period, beats, 1–4
+    weakPulseMix: 0.35, // how far the pulse blends toward weakHurt, 0–1
+    weakHpGapPx: 4, // gap between weak point and its HP arc, px, 2–10
     hitFlashMs: 220, // screen flash after a hit, ms, 0–400
+    hitFlashAlpha: 0.35, // screen flash peak opacity, 0–1
+    debugAlpha: 0.6, // debug hitbox ring opacity, 0–1
     highlightRadiusFrac: 0.62, // specular arc radius relative to the shape, 0.4–0.8
     highlightStartDeg: 200, // specular arc start angle (0 = right, 90 = down), degrees
     highlightEndDeg: 250, // specular arc end angle, degrees
     highlightWidthFrac: 0.16, // specular arc stroke width relative to the shape, 0.08–0.25
     highlightAlpha: 0.85, // specular arc opacity, 0–1
     fontSizePx: 16, // HUD text size, px, 12–24
+    infoFontPx: 12, // key hints and debug line size, px, 10–16
+    titleFontPx: 32, // win/lose banner size, px, 20–48
   },
   colors: {
     bg: 0x0b0820, // background
@@ -125,6 +141,13 @@ export const P = {
     energyLowFrac: 0.3, // bar turns to energyLow below this share of max, 0–1
     energyBarWidthPx: 260, // energy bar width, px, 120–400
     energyBarHeightPx: 12, // energy bar height, px, 6–20
+    trackAlpha: 0.12, // empty energy track opacity, 0–1
+    capMarkPx: 2, // graze cap marker width, px, 1–4
+    capOverhangPx: 3, // graze cap marker overhang above and below the bar, px, 0–8
+    timerGapPx: 4, // freeze timer line distance above the field, px, 0–12
+    timerHeightPx: 2, // freeze timer line thickness, px, 1–6
+    timerAlpha: 0.5, // freeze timer line opacity, 0–1
+    infoAlpha: 0.6, // key hints opacity, 0–1
   },
 };
 
