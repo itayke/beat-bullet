@@ -1,0 +1,124 @@
+{
+  "tempo": {
+    "beatsPerBar": 4,
+    "bpm": 120,
+    "planBeats": 2,
+    "introBeats": 4,
+    "motionBeats": 1,
+    "timeoutRepeat": true
+  },
+  "crawl": {
+    "leadFraction": 0.75,
+    "leadMs": 150
+  },
+  "field": {
+    "width": 3.5,
+    "height": 2,
+    "playerMargin": 0.06,
+    "playerTopY": 0,
+    "despawnMargin": 0.3
+  },
+  "creature": {
+    "scale": 0.5,
+    "anchorX": 0,
+    "anchorY": -0.5,
+    "driftPerBeat": 0
+  },
+  "player": {
+    "startX": 0,
+    "startY": 0.7,
+    "reach": 0.3,
+    "hitR": 0.02,
+    "grazeR": 0.08,
+    "maxTiltDeg": 8
+  },
+  "energy": {
+    "max": 100,
+    "start": 60,
+    "grazeCap": 80,
+    "grazeGain": 4,
+    "shotCost": 2,
+    "hitCost": 25,
+    "shotCanKill": false
+  },
+  "shots": {
+    "speed": 1,
+    "r": 0.02,
+    "damage": 1,
+    "hullBlocks": true,
+    "substeps": 8
+  },
+  "weak": {
+    "hp": 10
+  },
+  "enemy": {
+    "bulletSpeed": 0.25,
+    "speedScale": 1,
+    "densityScale": 1,
+    "bulletR": 0.025,
+    "burstSpeedStep": 0.1,
+    "streamMinSpeed": 0.4,
+    "spinStepDeg": 17
+  },
+  "input": {
+    "tapMaxPx": 8,
+    "tapMaxMs": 300,
+    "nudgeStep": 0.03,
+    "allowEarlyCommit": true
+  },
+  "debug": {
+    "startVisible": false,
+    "untimedFreeze": false
+  },
+  "render": {
+    "viewPadPx": 16,
+    "hudHeightPx": 44,
+    "scrollPerBeat": 0.12,
+    "stripeGap": 0.25,
+    "lineWidthPx": 2,
+    "previewAlpha": 0.55,
+    "previewDotFrac": 0.6,
+    "dangerSizePx": 9,
+    "reachAlpha": 0.25,
+    "shipSize": 0.05,
+    "gunLen": 0.07,
+    "gunWidth": 0.035,
+    "weakPulseBeats": 2,
+    "hitFlashMs": 220,
+    "highlightRadiusFrac": 0.62,
+    "highlightStartDeg": 200,
+    "highlightEndDeg": 250,
+    "highlightWidthFrac": 0.16,
+    "highlightAlpha": 0.85,
+    "fontSizePx": 16
+  },
+  "colors": {
+    "bg": 722976,
+    "bgStripe": 1511990,
+    "field": 1117228,
+    "hullA": 16727435,
+    "hullB": 16747069,
+    "gun": 8084735,
+    "weak": 3076808,
+    "weakHurt": 16777215,
+    "bullet": 16769357,
+    "bulletNew": 16751165,
+    "player": 4052735,
+    "reach": 4052735,
+    "plan": 16777215,
+    "danger": 16723285,
+    "graze": 10354524,
+    "shot": 10354524,
+    "energy": 10354524,
+    "energyLow": 16723285,
+    "energyCap": 16777215,
+    "highlight": 16773577,
+    "text": 16052479,
+    "hitFlash": 16723285
+  },
+  "hud": {
+    "energyLowFrac": 0.3,
+    "energyBarWidthPx": 260,
+    "energyBarHeightPx": 12
+  }
+}

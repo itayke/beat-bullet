@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`step > golden hash over a scripted 200-beat run (change only with a SIM_VERSION bump) 1`] = `
+{
+  "hash": "d7ea50fab8750e6b",
+  "version": 1,
+}
+`;
